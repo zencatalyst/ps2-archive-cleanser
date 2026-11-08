@@ -8,13 +8,13 @@
 
 Turns a folder of `.7z` PS2 dumps into a consistent, verified, fast-to-extract library.
 
-[![Release](https://img.shields.io/github/v/release/zencatalyst/ps2-archive-cleanser?color=blue)](https://github.com/zencatalyst/ps2-archive-cleanser/releases/tag/v1.0.0-2026-11-09)
+[![Release](https://img.shields.io/github/v/release/zencatalyst/ps2-archive-cleanser?color=blue)](https://github.com/zencatalyst/ps2-archive-cleanser/releases/latest)
 [![License: GPL v2+](https://img.shields.io/badge/license-GPL--2.0--or--later-blue.svg)](#-license)
 ![Shell](https://img.shields.io/badge/shell-bash-4EAA25?logo=gnubash&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-GNU%2FLinux-informational?logo=linux&logoColor=white)
 ![ShellCheck](https://img.shields.io/badge/ShellCheck-clean-brightgreen)
 
-[Features](#-features) · [Quick start](#-quick-start) · [How it works](#-how-it-works) · [Options](#-options) · [Safety](#-safety-and-what-gets-changed) · [FAQ](#-troubleshooting)
+[Features](#-features) · [Quick start](#-quick-start) · [How it works](#%EF%B8%8F-how-it-works) · [Options](#%EF%B8%8F-options) · [Safety](#%EF%B8%8F-safety-and-what-gets-changed) · [FAQ](#-troubleshooting)
 
 </div>
 
@@ -50,7 +50,7 @@ cd ~/ps2-archives
 ```
 
 > [!WARNING]
-> The script **replaces your input archives** with the cleaned versions (moved into `PS2-Games/`) and **deletes any `.txt` files inside them**. Run it on a **copy** of your library until you are comfortable with the results. See [Safety](#-safety-and-what-gets-changed).
+> The script **replaces your input archives** with the cleaned versions (moved into `PS2-Games/`) and **deletes any `.txt` files inside them**. Run it on a **copy** of your library until you are comfortable with the results. See [Safety](#%EF%B8%8F-safety-and-what-gets-changed).
 
 The script always works on the **current directory**, so run it from the folder that contains your `.7z` files.
 
