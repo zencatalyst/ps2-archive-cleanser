@@ -1,6 +1,8 @@
 <div align="center">
 
-# 💿 PS2 Archive Cleanser
+<img src="assets/logo.png" alt="PS2 Archive Cleanser Logo" width="280">
+
+# 💿 PS2 Archive Cleanser ☄️
 
 **Extract, verify, clean and recompress your PlayStation 2 game archives, in one command.**
 
@@ -161,7 +163,7 @@ At the end you get a summary with the total time, the number of archives process
 
 ### Redump verification
 
-1. Download the PlayStation 2 datfile from [redump.org](http://redump.org/).
+1. Download the PlayStation 2 datfile from [redump.org](http://redump.org/datfile/ps2/).
 2. Put the `.dat` file in the same folder as your archives.
 3. Run the script. It detects the file automatically (interactive mode asks you to confirm; `-y` enables it by default).
 
