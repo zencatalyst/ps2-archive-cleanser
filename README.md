@@ -8,7 +8,7 @@
 
 Turns a folder of `.7z` PS2 dumps into a consistent, verified, fast-to-extract library.
 
-[![Release](https://img.shields.io/github/v/release/zencatalyst/ps2-archive-cleanser?color=blue)](https://github.com/zencatalyst/ps2-archive-cleanser/releases)
+[![Release](https://img.shields.io/github/v/release/zencatalyst/ps2-archive-cleanser?color=blue)](https://github.com/zencatalyst/ps2-archive-cleanser/releases/tag/v1.0.0-2026-11-09)
 [![License: GPL v2+](https://img.shields.io/badge/license-GPL--2.0--or--later-blue.svg)](#-license)
 ![Shell](https://img.shields.io/badge/shell-bash-4EAA25?logo=gnubash&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-GNU%2FLinux-informational?logo=linux&logoColor=white)
