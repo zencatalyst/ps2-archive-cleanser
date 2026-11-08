@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Disc Base Gradient -->
+    <linearGradient id="discGrad" x1="15%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#6ae8ff" />
+      <stop offset="35%" stop-color="#1d8cf8" />
+      <stop offset="70%" stop-color="#0b3c9d" />
+      <stop offset="100%" stop-color="#071a4a" />
+    </linearGradient>
+
+    <!-- Iridescent Sheen -->
+    <linearGradient id="sheenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#7ef4ff" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#00d2ff" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Cleansing Wave Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="50%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#0a2e88" />
+      <stop offset="45%" stop-color="#00a8ff" />
+      <stop offset="85%" stop-color="#68f7ff" />
+      <stop offset="100%" stop-color="#e0ffff" />
+    </linearGradient>
+
+    <!-- Outer Rim Glow -->
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7df9ff" />
+      <stop offset="50%" stop-color="#1e90ff" />
+      <stop offset="100%" stop-color="#0d256c" />
+    </linearGradient>
+
+    <!-- Zipper Metal Gradient -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f8ff" />
+      <stop offset="50%" stop-color="#8ab8e6" />
+      <stop offset="100%" stop-color="#2c4d75" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00a2ff" flood-opacity="0.28" />
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+    <!-- Outer Dark Navy Backing Ring -->
+    <circle cx="256" cy="250" r="192" fill="#071330" stroke="url(#rimGrad)" stroke-width="6" />
+
+    <!-- Main Optical Disc -->
+    <circle cx="256" cy="250" r="176" fill="url(#discGrad)" stroke="#8beeff" stroke-width="3" />
+
+    <!-- Optical Light Reflection Wedges -->
+    <path d="M256 250 L132 126 A176 176 0 0 1 215 79 Z" fill="url(#sheenGrad)" />
+    <path d="M256 250 L380 374 A176 176 0 0 1 297 421 Z" fill="url(#sheenGrad)" />
+
+    <!-- Subtle Data Track Arcs -->
+    <path d="M135 215 A126 126 0 0 1 235 126" fill="none" stroke="#b8f5ff" stroke-width="2" stroke-linecap="round" opacity="0.55" />
+    <path d="M122 250 A134 134 0 0 1 142 182" fill="none" stroke="#b8f5ff" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+
+    <!-- Zipper Track Channel (Right Side of Disc) -->
+    <path d="M386 150 A165 165 0 0 1 350 385" fill="none" stroke="#06122e" stroke-width="26" stroke-linecap="round" />
+    <path d="M386 150 A165 165 0 0 1 350 385" fill="none" stroke="#7feaff" stroke-width="14" stroke-linecap="round" stroke-dasharray="6 9" />
+
+    <!-- Center Hub Rings -->
+    <circle cx="256" cy="250" r="58" fill="#0b2254" stroke="#72e5ff" stroke-width="4" />
+    <circle cx="256" cy="250" r="42" fill="#89c4f4" opacity="0.25" />
+    <circle cx="256" cy="250" r="26" fill="#061026" stroke="#a6f1ff" stroke-width="4" />
+
+    <!-- PS2-Inspired Geometric Emblem on Upper Disc -->
+    <g fill="none" stroke="#061539" stroke-width="6.5" stroke-linecap="square" stroke-linejoin="miter">
+      <!-- P -->
+      <path d="M188 164 V134 H216 V149 H188" />
+      <!-- S -->
+      <path d="M268 134 H238 V149 H268 V164 H238" />
+      <!-- 2 -->
+      <path d="M288 134 H318 V149 H288 V164 H318" />
+    </g>
+    <g fill="none" stroke="#7df9ff" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" opacity="0.85">
+      <path d="M188 164 V134 H216 V149 H188" />
+      <path d="M268 134 H238 V149 H268 V164 H238" />
+      <path d="M288 134 H318 V149 H288 V164 H318" />
+    </g>
+
+    <!-- Zipper Slider / Pull Tab -->
+    <g transform="translate(382, 268) rotate(22)">
+      <rect x="-15" y="-22" width="30" height="44" rx="8" fill="url(#metalGrad)" stroke="#06122e" stroke-width="3.5" />
+      <rect x="-7" y="-12" width="14" height="10" rx="3" fill="#06122e" />
+      <circle cx="0" cy="9" r="6" fill="#06122e" />
+    </g>
+
+    <!-- Dynamic Cleansing Wave Sweep (Bottom-Left to Bottom-Right) -->
+    <path d="M72 288 C86 382, 212 436, 368 352 C322 422, 198 456, 108 386 C82 365, 68 326, 72 288 Z" fill="url(#waveGrad)" stroke="#071a4a" stroke-width="3" />
+    <path d="M98 338 C148 398, 258 408, 376 322 C332 378, 224 414, 128 368 Z" fill="#bdfbff" opacity="0.8" />
+  </g>
+
+  <!-- Verification Sparkles -->
+  <!-- Top-Right Large Sparkle -->
+  <path d="M422 86 L430 112 L456 120 L430 128 L422 154 L414 128 L388 120 L414 112 Z" fill="#68f7ff" />
+  <!-- Top-Left Medium Sparkle -->
+  <path d="M86 120 L92 138 L110 144 L92 150 L86 168 L80 150 L62 144 L80 138 Z" fill="#68f7ff" />
+  <!-- Inner Disc White Sparkles -->
+  <path d="M180 296 L185 312 L201 317 L185 322 L180 338 L175 322 L159 317 L175 312 Z" fill="#ffffff" />
+  <path d="M332 192 L336 204 L348 208 L336 212 L332 224 L328 212 L316 208 L328 204 Z" fill="#ffffff" />
+  <!-- Bottom-Right Small Sparkle -->
+  <path d="M428 388 L432 400 L444 404 L432 408 L428 420 L424 408 L412 404 L424 400 Z" fill="#68f7ff" />
+</svg>
